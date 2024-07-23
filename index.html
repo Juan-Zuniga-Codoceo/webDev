@@ -65,42 +65,85 @@
       <h3>Testimonios</h3>
       <div class="row mt-4">
         <div class="col-md-4">
-          <p>"Excelente servicio, resultados increíbles!"</p>
-          <p>- Cliente 1</p>
+          <div class="card testimonial-card p-3">
+            <div class="card-body">
+              <p class="card-text">"Excelente servicio, hermoso diseño y la mejor atención."</p>
+              <div class="d-flex align-items-center mt-4">
+                <img src="images/testimonial1.jpg" alt="Cliente 1" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+                <div>
+                  <h5 class="card-title mb-0">Natalia Lopez</h5>
+                  <p class="card-subtitle">Periodista</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <p>"Muy profesionales y rápidos en la entrega."</p>
-          <p>- Cliente 2</p>
+          <div class="card testimonial-card p-3">
+            <div class="card-body">
+              <p class="card-text">"Muy profesionales y rápidos en la entrega."</p>
+              <div class="d-flex align-items-center mt-4">
+                <img src="images/testimonial2.jpg" alt="Cliente 2" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+                <div>
+                  <h5 class="card-title mb-0">Diego Soto</h5>
+                  <p class="card-subtitle">Músico</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <p>"Altamente recomendados para cualquier proyecto web."</p>
-          <p>- Cliente 3</p>
+          <div class="card testimonial-card p-3">
+            <div class="card-body">
+              <p class="card-text">"Altamente recomendados para cualquier proyecto web."</p>
+              <div class="d-flex align-items-center mt-4">
+                <img src="images/testimonial3.jpg" alt="Cliente 3" class="rounded-circle mr-3" style="width: 60px; height: 60px;">
+                <div>
+                  <h5 class="card-title mb-0">Camila Rojas</h5>
+                  <p class="card-subtitle">Emprendedora</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   
   <!-- Contacto -->
-  <section id="contact" class="bg-light p-5">
-    <div class="container">
-      <h3 class="text-center">Contáctanos</h3>
-      <form class="mt-4">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" class="form-control" required>
+<section id="contact" class="bg-light p-5">
+  <div class="container">
+    <h3 class="text-center mb-5">Contáctanos</h3>
+    <div class="row">
+      <!-- Formulario de Contacto -->
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      <!-- Imagen y Mensaje -->
+      <div class="col-md-6 d-flex align-items-center justify-content-center position-relative">
+        <img src="images/developer.jpg" alt="Desarrollador" class="img-fluid rounded">
+        <div class="message-overlay">
+          <h4 class="text-white">Hablemos sobre tu próximo proyecto</h4>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" class="form-control" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" class="form-control" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-3">
@@ -113,6 +156,19 @@
       </div>
     </div>
   </footer>
+
+  <!-- Botón de Volver al Inicio -->
+<a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Botón de WhatsApp -->
+  <div class="whatsapp-container">
+    <p>¡Chatea con nosotros!</p>
+    <a href="https://wa.me/1234567890?text=Hola, tengo una consulta" class="whatsapp-button" target="_blank">
+      <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+    </a>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

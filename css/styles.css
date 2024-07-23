@@ -3,21 +3,21 @@ body {
     background-color: #FFFFFF;
     color: #19232D;
     line-height: 1.6;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     background-color: #143447 !important;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
+}
+
+.navbar-dark .navbar-nav .nav-link {
     color: #FFFFFF !important;
-  }
-  
-  .navbar-dark .navbar-brand {
+}
+
+.navbar-dark .navbar-brand {
     color: #FFFFFF !important;
-  }
-  
-  .hero {
+}
+
+.hero {
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
@@ -25,9 +25,9 @@ body {
     padding-top: 350px; /* Incrementar padding-top para más espacio desde el navbar */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     position: relative;
-  }
-  
-  .hero .overlay {
+}
+
+.hero .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,67 +40,174 @@ body {
     flex-direction: column;
     padding: 50px;
     box-sizing: border-box;
-  }
-  
-  .hero h2 {
+}
+
+.hero h2 {
     font-size: 3rem;
-  }
-  
-  .hero p {
+}
+
+.hero p {
     font-size: 1.5rem;
-  }
-  
-  .hero .btn {
+}
+
+.hero .btn {
     background-color: #19232D;
     color: #FFFFFF;
     border: none;
     margin-top: 20px; /* Agregar margen superior para bajar el botón */
     transition: background-color 0.3s ease;
-  }
-  
-  .hero .btn:hover {
+    position: absolute;
+    bottom: 20px;
+}
+
+.hero .btn:hover {
     background-color: #FF0066; /* Cambiar color al pasar el mouse por encima */
-  }
-  
-  section {
+}
+
+section {
     padding: 60px 0;
-  }
-  
-  #services .fas {
+}
+
+#services .fas {
     color: #FF0066;
-  }
-  
-  #testimonials {
+}
+
+#testimonials {
     background-color: #F8F9FA;
-  }
-  
-  #contact .form-control {
+}
+
+.testimonial-card {
+    background: white;
+    border: none;
+    border-radius: 10px; /* Hacer la card cuadrada con bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0; /* Agregar margen entre las cards */
+}
+
+.testimonial-card img {
+    width: 60px; /* Ajustar tamaño de la imagen */
+    height: 60px; /* Ajustar tamaño de la imagen */
+    border-radius: 50%;
+}
+
+.testimonial-card .card-title {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #19232D;
+}
+
+.testimonial-card .card-subtitle {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.testimonial-card .card-text {
+    font-style: italic;
+}
+
+#contact .form-control {
     border-radius: 0;
     border: 1px solid #B0B0B0;
-  }
-  
-  #contact .btn {
+}
+
+#contact .btn {
     background-color: #FF0066;
     color: #FFFFFF;
     border: none;
-  }
-  
-  footer {
-    background-color: #143447;
+}
+
+footer {
+    background-color: #143447 !important;
     color: #B0B0B0;
     padding: 20px 0;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
-  }
-  
-  footer a {
-    color: #B0B0B0;
+}
+
+footer a {
+    color: #B0B0B0 !important;
     transition: color 0.3s;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: #FFFFFF;
-  }
-  
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 90px; /* Ajustar para que no colisione con el botón de WhatsApp */
+    right: 20px; /* Mover a la derecha */
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #143447;
+    color: #FF0066;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+}
+
+.back-to-top i {
+    font-size: 24px;
+}
+
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px; /* Ajustar para que esté más cerca del borde inferior */
+    left: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.whatsapp-container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #075e54;
+}
+
+.whatsapp-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#contact .col-md-6 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.message-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.message-overlay h4 {
+    color: #FFFFFF;
+    margin: 0;
+}
