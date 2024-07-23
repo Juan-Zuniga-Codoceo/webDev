@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #19232D;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: #143447 !important;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+  }
+  
+  .navbar-dark .navbar-brand {
+    color: #FFFFFF !important;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 300px 0; /* Incrementar padding para más espacio */
+    padding-top: 350px; /* Incrementar padding-top para más espacio desde el navbar */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .hero h2 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+  
+  .hero .btn {
+    background-color: #19232D;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 20px; /* Agregar margen superior para bajar el botón */
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #FF0066; /* Cambiar color al pasar el mouse por encima */
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+  #services .fas {
+    color: #FF0066;
+  }
+  
+  #testimonials {
+    background-color: #F8F9FA;
+  }
+  
+  #contact .form-control {
+    border-radius: 0;
+    border: 1px solid #B0B0B0;
+  }
+  
+  #contact .btn {
+    background-color: #FF0066;
+    color: #FFFFFF;
+    border: none;
+  }
+  
+  footer {
+    background-color: #143447;
+    color: #B0B0B0;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    color: #B0B0B0;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: #FFFFFF;
+  }
+  
