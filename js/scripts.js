@@ -2,15 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     const navBarToggler = document.querySelector('.navbar-toggler');
+    const backToTopButton = document.querySelector('.back-to-top');
 
     // Función para manejar la activación del enlace del navbar
     function handleNavLinkActivation() {
         let current = '';
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
+            const sectionTop = section.offsetTop - 70;
             const sectionHeight = section.offsetHeight;
-            if (pageYOffset >= sectionTop - 60 && pageYOffset < sectionTop + sectionHeight - 60) {
+            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
@@ -23,8 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Escucha el evento de desplazamiento para activar el enlace del navbar
-    window.addEventListener('scroll', handleNavLinkActivation);
+    // Función para mostrar/ocultar el botón de volver al inicio
+    function handleBackToTopVisibility() {
+        if (window.pageYOffset > 100) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    }
+
+    // Escucha el evento de desplazamiento para activar el enlace del navbar y mostrar/ocultar el botón de volver al inicio
+    window.addEventListener('scroll', function() {
+        handleNavLinkActivation();
+        handleBackToTopVisibility();
+    });
 
     // Escucha el evento de clic en el toggler para cerrar el menú y activar el enlace
     navLinks.forEach(link => {
@@ -36,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Llama a la función una vez para activar el enlace correcto al cargar la página
+    // Llama a las funciones una vez para activar el enlace correcto al cargar la página y mostrar/ocultar el botón de volver al inicio
     handleNavLinkActivation();
+    handleBackToTopVisibility();
 });

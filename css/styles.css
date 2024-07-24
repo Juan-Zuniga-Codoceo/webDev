@@ -80,6 +80,7 @@ body {
 
 section {
     padding: 60px 0;
+    margin-top: 70px;
 }
 
 #services .fas {
@@ -88,6 +89,7 @@ section {
 
 #testimonials {
     background-color: #F8F9FA;
+    margin-top: 0;
 }
 
 .testimonial-card {
@@ -119,6 +121,10 @@ section {
 
 .testimonial-card .card-text {
     font-style: italic;
+}
+
+#contact {
+    margin-top: 0; /* Asegúrate de que no haya margen superior */
 }
 
 #contact .form-control {
@@ -153,7 +159,7 @@ footer a:hover {
 
 .back-to-top {
     position: fixed;
-    bottom: 90px; /* Ajustar para que no colisione con el botón de WhatsApp */
+    bottom: 90px; /* Asegurar que coincida con el botón de WhatsApp */
     right: 20px; /* Mover a la derecha */
     display: none;
     width: 50px;
@@ -179,8 +185,8 @@ footer a:hover {
 
 .whatsapp-container {
     position: fixed;
-    bottom: 20px; /* Ajustar para que esté más cerca del borde inferior */
-    left: 20px;
+    bottom: 90px; /* Asegurar que coincida con la flecha */
+    left: 20px; /* Mover a la izquierda */
     text-align: center;
     z-index: 1000;
 }
@@ -203,6 +209,8 @@ footer a:hover {
     height: 60px;
     border-radius: 50%;
 }
+
+
 
 #contact .col-md-6 img {
     width: 100%;
